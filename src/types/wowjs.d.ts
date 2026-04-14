@@ -29,12 +29,8 @@ declare module 'wowjs' {
 }
 
 // Extend Window interface to include WOW for global access
-declare global {
-  interface Window {
-    WOW?: {
-      new (options?: import('wowjs/dist/wow.js').WOWOptions): import('wowjs/dist/wow.js').WOW;
-    };
-  }
+interface Window {
+  WOW?: {
+    new (options?: import('wowjs/dist/wow.js').WOWOptions): import('wowjs/dist/wow.js').WOW;
+  };
 }
-
-export {};

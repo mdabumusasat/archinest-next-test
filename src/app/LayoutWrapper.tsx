@@ -166,16 +166,11 @@ const LayoutWrapper: React.FC<LayoutProps> = ({
 
   // Dynamic Footer
   const renderFooter = () => {
-    const props = {
-      handleOpen,
-      handleRemove2,
-    };
-
     switch (FooterStyle) {
       case "two":
         return <Footer2 />;
       default:
-        return <Footer {...props}/>;
+        return <Footer />;
     }
   };
 

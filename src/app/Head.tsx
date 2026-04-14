@@ -1,0 +1,1 @@
+export const SITE_NAME = "Archinest | React Next JS Template";
